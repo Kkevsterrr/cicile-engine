@@ -13,7 +13,7 @@ CXXFLAGS:= $(CXXFLAGS_BASE)
 CXXFLAGS_DEP = \
 	-std=gnu++11
 
-LDFLAGS=-L. -Lgtb -lm  -lgtb
+LDFLAGS=-L. -Lgtb -lm -ltcmalloc -lgtb
 
 ifeq ($(PG), 1)
 	CXXFLAGS += -g -O2 -pg
