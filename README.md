@@ -3,6 +3,7 @@
 Cecile is an experimental chess engine based on Giraffe, a temporal-difference reinforcement learning with deep neural networks. Like giraffe, it discovers almost all its chess knowledge through self-play.
 
 For more information about the original giraffe publication, see: http://arxiv.org/abs/1509.01549
+Full credit to the original giraffe source to Michael Lai (source code here: https://bitbucket.org/waterreaction/giraffe/overview)
 
 ## Gaviota Tablebases ##
 To use Gaviota tablebases, set the path through the GaviotaTbPath option.
