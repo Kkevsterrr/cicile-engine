@@ -1,4 +1,4 @@
-### Cecile ###
+# Cecile #
 
 Cecile is an experimental chess engine based on Giraffe, a temporal-difference reinforcement learning with deep neural networks. Like giraffe, it discovers almost all its chess knowledge through self-play.
 
