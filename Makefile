@@ -1,13 +1,11 @@
 CXX=g++-4.9
 
 # this is used to build gtb only
-CC=gcc-4.9 
-
-HGVERSION:= $(shell hg parents --template '{node|short}')
+CC=gcc-4.9
 
 CXXFLAGS_BASE = \
 	-Wall -Wextra -Wno-unused-function -std=gnu++11 -mtune=native -Wa,-q -ffast-math \
-	-pthread -fopenmp -DHGVERSION="\"${HGVERSION}\""
+	-pthread -fopenmp 
 
 # we will then extend this one with optimization flags
 CXXFLAGS:= $(CXXFLAGS_BASE)
@@ -15,7 +13,7 @@ CXXFLAGS:= $(CXXFLAGS_BASE)
 CXXFLAGS_DEP = \
 	-std=gnu++11
 
-LDFLAGS=-L. -Lgtb -lm -ltcmalloc -lgtb
+LDFLAGS=-L. -Lgtb -lm  -lgtb
 
 ifeq ($(PG), 1)
 	CXXFLAGS += -g -O2 -pg
