@@ -1,12 +1,8 @@
-### Giraffe ###
+### Cecile ###
 
-Giraffe is an experimental chess engine based on temporal-difference reinforcement learning with deep neural networks. It discovers almost all its chess knowledge through self-play.
+Cecile is an experimental chess engine based on Giraffe, a temporal-difference reinforcement learning with deep neural networks. Like giraffe, it discovers almost all its chess knowledge through self-play.
 
-For more information, see: http://arxiv.org/abs/1509.01549
-
-Giraffe is written in C++11.
-
-If you decide to compile Giraffe yourself, please grab the neural network definition files (eval.net and meval.net) from the binary distribution. They must be in Giraffe's working directory when Giraffe is started. Instructions on how to generate those files will be added later.
+For more information about the original giraffe publication, see: http://arxiv.org/abs/1509.01549
 
 ## Gaviota Tablebases ##
 To use Gaviota tablebases, set the path through the GaviotaTbPath option.
