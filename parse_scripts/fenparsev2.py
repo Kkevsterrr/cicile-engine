@@ -40,7 +40,7 @@ iboard_sample
 
 
 # In[5]:
-
+'''
 #testing fen2sunfish function to see if sunfish likes it 
 pos = Position(sunfish_board_sample, 0, (True,True), (True,True), 0, 0)
 #if to_move == 'b' : pos = pos.rotate()
@@ -57,7 +57,7 @@ print_pos(pos)
 # In[6]:
 
 iboard_sample
-
+'''
 
 # In[7]:
 
